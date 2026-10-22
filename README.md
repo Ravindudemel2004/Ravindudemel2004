@@ -1,7 +1,7 @@
 <!-- 1. ANIMATED SVG HEADER -->
 <p align="center">
   <!-- Replace YOUR_USERNAME with your actual GitHub username -->
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/banner.svg" width="100%" alt="Computer Engineering Animated Banner">
+  <img src="https://raw.githubusercontent.com/Ravindudemel2004/Ravindudemel2004/main/banner.svg" width="100%" alt="Computer Engineering Animated Banner">
 </p>
 
 <br>
@@ -59,8 +59,8 @@ Detail-oriented **Computer Engineering undergraduate** at Sri Jayewardenepura Un
 <!-- 6. GITHUB STATS (Optional but highly recommended) -->
 ### 📊 GitHub Activity
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&hide_border=true&title_color=06b6d4&icon_color=8b5cf6&text_color=ffffff" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_USERNAME&theme=dark&hide_border=true&border=06b6d4&fire=06b6d4" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ravindudemel2004&show_icons=true&theme=dark&hide_border=true&title_color=06b6d4&icon_color=8b5cf6&text_color=ffffff" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Ravindudemel2004&theme=dark&hide_border=true&border=06b6d4&fire=06b6d4" alt="GitHub Streak" />
 </p>
 
 <br>
