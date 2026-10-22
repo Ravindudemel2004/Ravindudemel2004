@@ -1,0 +1,96 @@
+<svg width="100%" viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient matching GitHub Dark Mode -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <!-- Line Gradient for Data Flow -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" /> <!-- Cyan -->
+      <stop offset="100%" stop-color="#8b5cf6" /> <!-- Purple -->
+    </linearGradient>
+    
+    <style>
+      .bg { fill: url(#bgGrad); }
+      .node { fill: #06b6d4; filter: drop-shadow(0 0 6px #06b6d4); }
+      .node-purple { fill: #8b5cf6; filter: drop-shadow(0 0 6px #8b5cf6); }
+      
+      /* Animated Data Flow Lines */
+      .line { 
+        stroke: url(#lineGrad); 
+        stroke-width: 1.5; 
+        fill: none; 
+        stroke-dasharray: 8 12; 
+        animation: flow 4s linear infinite; 
+      }
+      @keyframes flow { to { stroke-dashoffset: -100; } }
+
+      /* Edge Computing Core Pulse */
+      .core-ring { 
+        fill: none; 
+        stroke: #06b6d4; 
+        stroke-width: 2; 
+        animation: pulse-ring 3s ease-out infinite; 
+      }
+      @keyframes pulse-ring {
+        0% { r: 20; opacity: 1; stroke-width: 2; }
+        100% { r: 45; opacity: 0; stroke-width: 0; }
+      }
+      
+      .core-center { fill: #0d1117; stroke: #06b6d4; stroke-width: 2; filter: drop-shadow(0 0 10px #06b6d4); }
+      .core-dot { fill: #06b6d4; }
+
+      /* Subtle floating effect for outer nodes */
+      .float-1 { animation: float 6s ease-in-out infinite; }
+      .float-2 { animation: float 8s ease-in-out infinite reverse; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1000" height="250" />
+  
+  <!-- Subtle Background Grid Dots -->
+  <g fill="#30363d" opacity="0.6">
+    <circle cx="100" cy="50" r="1.5"/><circle cx="200" cy="150" r="1.5"/><circle cx="300" cy="80" r="1.5"/>
+    <circle cx="700" cy="180" r="1.5"/><circle cx="800" cy="60" r="1.5"/><circle cx="900" cy="120" r="1.5"/>
+    <circle cx="150" cy="200" r="1.5"/><circle cx="850" cy="200" r="1.5"/>
+  </g>
+
+  <!-- Network Connections (Data Flow) -->
+  <path class="line" d="M500,125 L200,60" />
+  <path class="line" d="M500,125 L250,200" />
+  <path class="line" d="M500,125 L800,70" />
+  <path class="line" d="M500,125 L750,190" />
+  <path class="line" d="M500,125 L100,125" />
+  <path class="line" d="M500,125 L900,125" />
+
+  <!-- Outer Nodes (Edge Devices / Network Endpoints) -->
+  <g class="float-1">
+    <circle class="node-purple" cx="200" cy="60" r="5" />
+    <circle class="node" cx="800" cy="70" r="6" />
+    <circle class="node-purple" cx="100" cy="125" r="4" />
+  </g>
+  <g class="float-2">
+    <circle class="node" cx="250" cy="200" r="6" />
+    <circle class="node-purple" cx="750" cy="190" r="5" />
+    <circle class="node" cx="900" cy="125" r="4" />
+  </g>
+
+  <!-- Central Core (AI / Edge Computing Hub) -->
+  <g transform="translate(500, 125)">
+    <!-- Pulsing Radar/Network Rings -->
+    <circle class="core-ring" cx="0" cy="0" r="20" />
+    <circle class="core-ring" cx="0" cy="0" r="20" style="animation-delay: 1.5s;" />
+    
+    <!-- Solid Core -->
+    <circle class="core-center" cx="0" cy="0" r="18" />
+    <circle class="core-dot" cx="0" cy="0" r="6" />
+    
+    <!-- Rotating Inner Tech Ring -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4 6" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="infinite"/>
+    </circle>
+  </g>
+</svg>
